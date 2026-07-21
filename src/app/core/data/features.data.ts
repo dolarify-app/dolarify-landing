@@ -11,6 +11,24 @@ export interface Feature {
 
 export const features: Feature[] = [
   {
+    id: 'copia-bs',
+    title: 'Copia en Bolívares (VES)',
+    description: 'Convierte y copia ítems en USD, EUR o USDT a Bs automáticamente usando la tasa BCV oficial.',
+    icon: 'copy',
+    accent: 'gold',
+    size: 'm',
+    version: 'v1.6.2',
+  },
+  {
+    id: 'compartir-rapido',
+    title: 'Compartir presupuestos al instante',
+    description: 'Envía el resumen de tu presupuesto recalculado en tiempo real sin montos desfasados.',
+    icon: 'share-2',
+    accent: 'purple',
+    size: 'm',
+    version: 'v1.6.2',
+  },
+  {
     id: 'calculadora',
     title: 'Calculadora multi-moneda',
     description: 'Convierte entre Bolívares, Dólar BCV, Euro y USDT en un solo toque.',
@@ -40,6 +58,25 @@ export const features: Feature[] = [
     version: 'v1.0.0',
   },
   {
+    id: 'presupuestos',
+    title: 'Presupuestos multi-concepto',
+    description: 'Crea presupuestos con varios items en distintas monedas.',
+    icon: 'wallet',
+    accent: 'gold',
+    size: 'm',
+    version: 'v1.6.2',
+    screenshot: 'screenshots/ios/presupuesto.webp',
+  },
+  {
+    id: 'copia-precision',
+    title: 'Formato nativo en copiar',
+    description: 'Copia cifras con formato es-VE (ej. 13.500,50 Bs) listas para enviar por WhatsApp.',
+    icon: 'zap',
+    accent: 'purple',
+    size: 's',
+    version: 'v1.6.1',
+  },
+  {
     id: 'historial',
     title: 'Historial y comparación',
     description: 'Ve cómo han cambiado las tasas desde que guardaste tu cotización.',
@@ -48,16 +85,6 @@ export const features: Feature[] = [
     size: 'm',
     version: 'v1.2.0',
     screenshot: 'screenshots/ios/cotizacion-guardada.webp',
-  },
-  {
-    id: 'presupuestos',
-    title: 'Presupuestos multi-concepto',
-    description: 'Crea presupuestos con varios items en distintas monedas.',
-    icon: 'wallet',
-    accent: 'gold',
-    size: 'm',
-    version: 'v1.1.0',
-    screenshot: 'screenshots/ios/presupuesto.webp',
   },
   {
     id: 'busqueda',
@@ -88,17 +115,8 @@ export const features: Feature[] = [
     version: 'v1.5.1',
   },
   {
-    id: 'compartir',
-    title: 'Comparte cotizaciones',
-    description: 'Exporta como texto o imagen con un solo toque.',
-    icon: 'share-2',
-    accent: 'purple',
-    size: 's',
-    version: 'v1.5.1',
-  },
-  {
     id: 'marcadores',
-    title: 'Marcadores y presupuestos guardados',
+    title: 'Marcadores guardados',
     description: 'Lleva el control de tus cotizaciones favoritas.',
     icon: 'bookmark',
     accent: 'gold',
@@ -106,7 +124,6 @@ export const features: Feature[] = [
     version: 'v1.2.0',
     screenshot: 'screenshots/ios/marcadores.webp',
   },
-
   {
     id: 'glass',
     title: 'Glassmorphism premium',
@@ -117,3 +134,4 @@ export const features: Feature[] = [
     version: 'v1.1.0',
   },
 ];
+
