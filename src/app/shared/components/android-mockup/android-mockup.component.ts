@@ -9,10 +9,10 @@ let instanceCounter = 0;
     <svg
       [attr.width]="width()"
       [attr.height]="height()"
-      [attr.viewBox]="'0 0 433 882'"
+      viewBox="0 0 380 830"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="h-auto w-full max-w-full drop-shadow-xl"
+      class="mx-auto block h-auto w-full max-w-full drop-shadow-xl"
     >
       <path
         d="M376 153H378C379.105 153 380 153.895 380 155V249C380 250.105 379.105 251 378 251H376V153Z"
@@ -95,7 +95,9 @@ let instanceCounter = 0;
   `,
   styles: [`
     :host {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
     }
   `],
@@ -103,8 +105,8 @@ let instanceCounter = 0;
 export class AndroidMockupComponent {
   readonly src = input<string>();
   readonly videoSrc = input<string>();
-  readonly width = input<number>(433);
-  readonly height = input<number>(882);
+  readonly width = input<number>(380);
+  readonly height = input<number>(830);
 
   protected readonly clipId = `android-clip-${++instanceCounter}`;
 }

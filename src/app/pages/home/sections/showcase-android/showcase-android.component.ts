@@ -25,8 +25,8 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
           class="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 items-end justify-items-center"
         >
           @for (slide of slides; track slide.image) {
-            <figure class="flex flex-col items-center w-full max-w-[260px] transition-transform hover:scale-[1.03]">
-              <app-android-mockup [src]="slide.image" />
+            <figure class="flex w-full max-w-[260px] flex-col items-center justify-center text-center transition-transform hover:scale-[1.03]">
+              <app-android-mockup [src]="slide.image" class="w-full flex justify-center" />
               <figcaption class="mt-3 text-center text-sm font-medium fg-secondary">
                 {{ slide.title }}
               </figcaption>
