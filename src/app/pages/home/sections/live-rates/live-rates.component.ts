@@ -30,12 +30,6 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
               class="block"
             >
               <div class="glass relative h-full overflow-hidden rounded-2xl p-6">
-                <div
-                  class="absolute top-0 right-0 left-0 h-1"
-                  [class.bg-gold]="rate.source === 'BCV'"
-                  [class.bg-success]="rate.source === 'Binance P2P'"
-                  aria-hidden="true"
-                ></div>
 
                 <div class="flex items-center gap-3">
                   <span class="text-2xl" aria-hidden="true">{{ rate.flag }}</span>
