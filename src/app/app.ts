@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, afterNextRender, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { SmoothScrollService } from './core/services/smooth-scroll.service';
 
 @Component({
   selector: 'app-root',
@@ -22,4 +23,13 @@ import { FooterComponent } from './shared/components/footer/footer.component';
   `,
   styles: [],
 })
-export class App {}
+export class App {
+  private readonly smoothScroll = inject(SmoothScrollService);
+
+  constructor() {
+    afterNextRender(() => {
+      this.smoothScroll.init();
+    });
+  }
+}
+

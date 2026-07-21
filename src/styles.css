@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
+@import 'lenis/dist/lenis.css';
 
 /* ============================================================
    DOLARIFY DESIGN SYSTEM — Source of Truth
@@ -314,3 +315,13 @@ summary:focus-visible {
 .snap-x-scroll > * {
   scroll-snap-align: center;
 }
+
+/* ============================================================
+   VIEW TRANSITIONS FOR THEME TOGGLE
+   ============================================================ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
