@@ -8,9 +8,9 @@ export const routes: Routes = [
       import('./pages/home/home.component').then((m) => m.HomeComponent),
     data: {
       seo: {
-        title: 'Dolarify — Tasas en tiempo real para Venezuela',
+        title: 'Dolarify — Tasas en tiempo real, Dólar BCV y Calculadora Venezuela',
         description:
-          'Convierte entre Bolívares, Dólar BCV, Euro y USDT con tasas en vivo. La calculadora y presupuestos más rápidos para Venezuela.',
+          'Consulta las tasas en tiempo real de Venezuela: Dólar BCV, Euro y USDT. Usa nuestra calculadora de divisas para Bolívares y presupuestos al instante.',
         path: '/',
       },
     },

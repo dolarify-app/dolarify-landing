@@ -2,10 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Dolarify — Tasas en tiempo real para Venezuela</title>
+    <title>Dolarify — Tasas en tiempo real, Dólar BCV y Calculadora Venezuela</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="Convierte entre Bolívares, Dólar BCV, Euro y USDT con tasas en vivo. La calculadora y presupuestos más rápidos para Venezuela." />
+    <meta
+      name="description"
+      content="Consulta las tasas en tiempo real de Venezuela: Dólar BCV, Euro y USDT. Usa nuestra calculadora de divisas para Bolívares y presupuestos al instante."
+    />
     <meta name="theme-color" content="#080b16" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f5f5fa" media="(prefers-color-scheme: light)" />
     <meta name="color-scheme" content="dark light" />
@@ -17,8 +20,11 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Dolarify" />
-    <meta property="og:title" content="Dolarify — Tasas en tiempo real para Venezuela" />
-    <meta property="og:description" content="Convierte entre Bolívares, Dólar BCV, Euro y USDT con tasas en vivo. La calculadora y presupuestos más rápidos para Venezuela." />
+    <meta property="og:title" content="Dolarify — Tasas en tiempo real, Dólar BCV y Calculadora Venezuela" />
+    <meta
+      property="og:description"
+      content="Consulta las tasas en tiempo real de Venezuela: Dólar BCV, Euro y USDT. Usa nuestra calculadora de divisas para Bolívares y presupuestos al instante."
+    />
     <meta property="og:image" content="/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -26,8 +32,11 @@
     <meta property="og:locale" content="es_VE" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dolarify — Tasas en tiempo real para Venezuela" />
-    <meta name="twitter:description" content="Convierte entre Bolívares, Dólar BCV, Euro y USDT con tasas en vivo." />
+    <meta name="twitter:title" content="Dolarify — Tasas en tiempo real, Dólar BCV y Calculadora Venezuela" />
+    <meta
+      name="twitter:description"
+      content="Consulta las tasas en tiempo real de Venezuela: Dólar BCV, Euro y USDT. Usa nuestra calculadora de divisas para Bolívares y presupuestos al instante."
+    />
     <meta name="twitter:image" content="/og-image.png" />
 
     <meta name="apple-itunes-app" content="app-id=6763238329" />
@@ -37,6 +46,131 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="canonical" href="https://dolarify.app/" />
+
+    <script type="application/ld+json" id="software-application-schema">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Dolarify",
+      "category": "FinanceApplication",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "price": "0",
+      "currency": "USD",
+      "url": "https://dolarify.app",
+      "downloadUrl": "https://dolarify.app/download",
+      "author": {
+        "@type": "Organization",
+        "name": "Lyon Incode",
+        "url": "https://dolarify.app"
+      }
+    }
+    </script>
+    <script type="application/ld+json" id="website-schema">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://dolarify.app/#website",
+          "name": "Dolarify",
+          "url": "https://dolarify.app",
+          "inLanguage": "es-VE",
+          "description": "Consulta las tasas en tiempo real de Venezuela: Dólar BCV, Euro y USDT. Usa nuestra calculadora de divisas para Bolívares y presupuestos al instante.",
+          "publisher": {
+            "@id": "https://dolarify.app/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://dolarify.app/#organization",
+          "name": "Lyon Incode",
+          "url": "https://dolarify.app",
+          "logo": "https://dolarify.app/brand/logo-sin-fondo.png",
+          "sameAs": [
+            "https://www.bcv.org.ve"
+          ]
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json" id="faq-schema">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿De dónde vienen las tasas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las tasas se extraen en tiempo real del Banco Central de Venezuela (BCV) y Binance P2P. No somos responsables por errores en la publicación de las tasas. Recomendamos verificar en las fuentes oficiales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, Dolarify es totalmente gratis. La app se mantiene con anuncios banner no intrusivos, sin suscripción ni compras dentro de la app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito crear una cuenta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Dolarify funciona sin registro. Todo se guarda localmente en tu dispositivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funciona sin internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes consultar tasas guardadas y presupuestos sin conexión, pero para actualizar las tasas en tiempo real necesitas internet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Mis datos están seguros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Dolarify no recolecta datos personales. Tus presupuestos, cotizaciones y configuraciones se almacenan únicamente en tu dispositivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Planean agregar más monedas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Estamos trabajando para incluir nuevas monedas y tasas personalizables. Puedes sugerir monedas desde la sección de Ajustes dentro de la app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay versión web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por ahora Dolarify es solo móvil (iOS y Android). Esta web es la página oficial para conocer la app y descargarla."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo contacto soporte?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Escríbenos a soporte@dolarify.app y te responderemos lo antes posible."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <app-root></app-root>

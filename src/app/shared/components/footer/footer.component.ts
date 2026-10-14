@@ -50,17 +50,60 @@ import { supportEmail } from '../../../core/data/legal.data';
               <a routerLink="/terms" class="transition-colors hover:fg">Términos de servicio</a>
             </li>
             <li>
+              <a
+                href="https://www.bcv.org.ve"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-colors hover:fg"
+              >
+                Banco Central de Venezuela (BCV)
+              </a>
+            </li>
+            <li>
               <a [href]="'mailto:' + email" class="transition-colors hover:fg">Soporte</a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="mx-auto mt-10 flex max-w-7xl flex-col items-center justify-between gap-3 border-t border-glass px-6 pt-6 text-xs fg-muted md:flex-row">
-        <p>© {{ year }} Dolarify. Hecho con cariño para Venezuela.</p>
+      <div class="mx-auto mt-8 max-w-7xl border-t border-glass px-6 pt-6">
+        <p class="text-xs leading-relaxed fg-muted">
+          <span class="font-semibold fg-secondary">Aviso legal y financiero:</span>
+          Dolarify es una plataforma de consulta referencial e informativa. Las cotizaciones mostradas del Dólar BCV, Euro y USDT provienen de fuentes públicas del
+          <a
+            href="https://www.bcv.org.ve"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gold-light underline-offset-4 hover:underline"
+          >Banco Central de Venezuela (BCV)</a>
+          y plataformas de intercambio de criptoactivos. Dolarify no es una entidad financiera ni bancaria, no realiza intermediación cambiaria ni comercialización de divisas, y sus estimaciones no constituyen asesoramiento financiero ni sugerencias de inversión. Verifique siempre los valores oficiales antes de realizar cualquier transacción.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-6 flex max-w-7xl flex-col items-center justify-between gap-3 border-t border-glass px-6 pt-6 text-xs fg-muted md:flex-row">
         <p>
-          Fuentes de tasas:
-          <span class="text-gold-light">BCV</span> ·
+          © {{ year }} Dolarify. Creado por
+          <a
+            href="https://dolarify.app"
+            target="_blank"
+            rel="noopener"
+            class="font-medium text-gold-light transition-colors hover:underline"
+          >
+            Lyon Incode
+          </a>
+          . Hecho con cariño para Venezuela.
+        </p>
+        <p>
+          Fuentes oficiales:
+          <a
+            href="https://www.bcv.org.ve"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gold-light transition-colors hover:underline"
+          >
+            BCV Oficial
+          </a>
+          ·
           <span class="text-purple-light">Binance P2P</span>
         </p>
       </div>

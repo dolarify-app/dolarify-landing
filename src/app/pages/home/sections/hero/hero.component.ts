@@ -21,10 +21,10 @@ const CURRENCIES = ['VES', 'USD', 'EUR', 'USDT'] as const;
             </span>
 
             <h1 class="font-display text-4xl font-bold leading-[1.05] tracking-tight fg md:text-6xl lg:text-7xl">
-              Tasas en tiempo real.
+              Tasas en tiempo real para Venezuela.
               <br />
               <span class="bg-gradient-to-r from-gold to-purple-light bg-clip-text text-transparent">
-                Decisiones en segundos.
+                Dólar BCV, Paralelo y Calculadora.
               </span>
             </h1>
 
