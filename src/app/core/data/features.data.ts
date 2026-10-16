@@ -5,7 +5,6 @@ export interface Feature {
   icon: string;
   accent: 'gold' | 'purple';
   size: 'xl' | 'm' | 's' | 'wide';
-  version?: string;
   screenshot?: string;
 }
 
@@ -17,7 +16,6 @@ export const features: Feature[] = [
     icon: 'copy',
     accent: 'gold',
     size: 'm',
-    version: 'v1.6.2',
   },
   {
     id: 'compartir-rapido',
@@ -26,7 +24,6 @@ export const features: Feature[] = [
     icon: 'share-2',
     accent: 'purple',
     size: 'm',
-    version: 'v1.6.2',
   },
   {
     id: 'calculadora',
@@ -35,7 +32,6 @@ export const features: Feature[] = [
     icon: 'calculator',
     accent: 'gold',
     size: 'wide',
-    version: 'v1.0.0',
     screenshot: 'screenshots/ios/calculadora.webp',
   },
   {
@@ -45,7 +41,6 @@ export const features: Feature[] = [
     icon: 'trending-up',
     accent: 'gold',
     size: 'm',
-    version: 'v1.0.0',
     screenshot: 'screenshots/ios/indicadores-lista.webp',
   },
   {
@@ -55,7 +50,6 @@ export const features: Feature[] = [
     icon: 'coins',
     accent: 'purple',
     size: 'm',
-    version: 'v1.0.0',
   },
   {
     id: 'presupuestos',
@@ -64,7 +58,6 @@ export const features: Feature[] = [
     icon: 'wallet',
     accent: 'gold',
     size: 'm',
-    version: 'v1.6.2',
     screenshot: 'screenshots/ios/presupuesto.webp',
   },
   {
@@ -74,7 +67,6 @@ export const features: Feature[] = [
     icon: 'zap',
     accent: 'purple',
     size: 's',
-    version: 'v1.6.1',
   },
   {
     id: 'historial',
@@ -83,7 +75,6 @@ export const features: Feature[] = [
     icon: 'history',
     accent: 'purple',
     size: 'm',
-    version: 'v1.2.0',
     screenshot: 'screenshots/ios/cotizacion-guardada.webp',
   },
   {
@@ -93,7 +84,6 @@ export const features: Feature[] = [
     icon: 'search',
     accent: 'purple',
     size: 's',
-    version: 'v1.1.0',
   },
   {
     id: 'indicadores-vista',
@@ -102,7 +92,6 @@ export const features: Feature[] = [
     icon: 'layout-grid',
     accent: 'gold',
     size: 's',
-    version: 'v1.2.0',
     screenshot: 'screenshots/ios/indicadores-cuadros.webp',
   },
   {
@@ -112,7 +101,6 @@ export const features: Feature[] = [
     icon: 'sliders-horizontal',
     accent: 'gold',
     size: 's',
-    version: 'v1.5.1',
   },
   {
     id: 'marcadores',
@@ -121,17 +109,14 @@ export const features: Feature[] = [
     icon: 'bookmark',
     accent: 'gold',
     size: 's',
-    version: 'v1.2.0',
     screenshot: 'screenshots/ios/marcadores.webp',
   },
   {
-    id: 'glass',
-    title: 'Glassmorphism premium',
-    description: 'Animaciones y micro-interacciones cuidadas al detalle.',
+    id: 'experiencia',
+    title: 'Rápida, limpia y sin registros',
+    description: 'Sin inicio de sesión, sin publicidad invasiva y con diseño optimizado.',
     icon: 'sparkles',
     accent: 'purple',
     size: 's',
-    version: 'v1.1.0',
   },
 ];
-

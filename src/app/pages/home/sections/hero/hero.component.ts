@@ -23,7 +23,7 @@ const CURRENCIES = ['VES', 'USD', 'EUR', 'USDT'] as const;
             <h1 class="font-display text-4xl font-bold leading-[1.05] tracking-tight fg md:text-6xl lg:text-7xl">
               Tasas en tiempo real para Venezuela.
               <br />
-              <span class="bg-gradient-to-r from-gold to-purple-light bg-clip-text text-transparent">
+              <span class="text-gold-light">
                 Dólar BCV, Paralelo y Calculadora.
               </span>
             </h1>
@@ -80,7 +80,7 @@ const CURRENCIES = ['VES', 'USD', 'EUR', 'USDT'] as const;
                   <span class="text-lg">🇺🇸</span>
                   <div>
                     <p class="text-[10px] fg-muted uppercase tracking-wider">Dólar BCV</p>
-                    <p class="glow-gold font-display text-lg font-bold">130.45</p>
+                    <p class="text-gold-light glow-text-gold font-display text-lg font-bold">130.45</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const CURRENCIES = ['VES', 'USD', 'EUR', 'USDT'] as const;
                   <span class="text-lg">💲</span>
                   <div>
                     <p class="text-[10px] fg-muted uppercase tracking-wider">USDT</p>
-                    <p class="glow-gold font-display text-lg font-bold">138.92</p>
+                    <p class="text-gold-light glow-text-gold font-display text-lg font-bold">138.92</p>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const CURRENCIES = ['VES', 'USD', 'EUR', 'USDT'] as const;
                   <p
                     class="mt-2 font-display text-2xl font-bold tracking-tight md:mt-3 md:text-3xl"
                     [class.text-gold-light]="i === currentIndex()"
-                    [class.glow-gold]="i === currentIndex()"
+                    [class.glow-text-gold]="i === currentIndex()"
                     [class.fg]="i !== currentIndex()"
                   >
                     {{ formatValue(getValueFor(i)) }}
@@ -138,7 +138,7 @@ const CURRENCIES = ['VES', 'USD', 'EUR', 'USDT'] as const;
               }
             </div>
             <p class="mt-6 text-center text-xs fg-muted">
-              Tasas de muestra. Las tasas reales se actualizan en la app.
+              Vista previa en vivo. Valores de referencia actualizados automáticamente en la app.
             </p>
           </div>
         </div>

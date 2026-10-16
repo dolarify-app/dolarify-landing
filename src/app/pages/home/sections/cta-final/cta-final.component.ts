@@ -14,7 +14,7 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
           <div appRevealOnScroll>
             <h2 id="cta-heading" class="font-display text-4xl font-bold tracking-tight fg md:text-6xl">
               Empieza a convertir
-              <span class="bg-gradient-to-r from-gold to-purple-light bg-clip-text text-transparent">
+              <span class="text-gold-light">
                 hoy.
               </span>
             </h2>

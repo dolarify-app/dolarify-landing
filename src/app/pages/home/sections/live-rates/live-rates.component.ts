@@ -43,7 +43,7 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
                   </div>
                 </div>
 
-                <p class="mt-6 font-display text-4xl font-bold tracking-tight glow-gold">
+                <p class="mt-6 font-display text-4xl font-bold tracking-tight text-gold-light glow-text-gold">
                   {{ rate.value.toFixed(2) }}
                   <span class="text-base font-medium fg-secondary">Bs</span>
                 </p>
@@ -73,60 +73,8 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
           }
         </div>
 
-        <div class="mt-12" appRevealOnScroll [delay]="150">
-          <div class="glass overflow-hidden rounded-2xl p-6 md:p-8">
-            <div class="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
-              <div>
-                <h3 class="font-display text-xl font-bold fg">
-                  Tabla de conversión rápida USD a Bolívares
-                </h3>
-                <p class="mt-1 text-xs fg-secondary">
-                  Calculada según la tasa del Dólar BCV (1 USD = {{ usdRate.toFixed(2) }} Bs)
-                </p>
-              </div>
-              <span class="inline-flex items-center gap-1.5 self-start rounded-full border border-glass bg-glass px-3 py-1 text-xs font-medium text-gold-light">
-                <span class="bg-success h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
-                Tasa de referencia oficial
-              </span>
-            </div>
-
-            <div class="overflow-x-auto">
-              <table class="w-full text-left text-sm" aria-label="Tabla de conversión de USD a Bolívares según tasa BCV">
-                <caption class="sr-only">
-                  Conversión de denominaciones típicas de Dólares estadounidenses a Bolívares según tasa oficial del BCV
-                </caption>
-                <thead>
-                  <tr class="border-b border-glass text-xs uppercase tracking-wider fg-muted">
-                    <th scope="col" class="pb-3 font-semibold">Dólares (USD)</th>
-                    <th scope="col" class="pb-3 text-right font-semibold">Bolívares (VES)</th>
-                    <th scope="col" class="hidden pb-3 text-right font-semibold sm:table-cell">Tasa aplicada</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-glass/40">
-                  @for (amount of denominations; track amount) {
-                    <tr class="transition-colors hover:bg-glass/30">
-                      <td class="py-3.5 font-medium fg">
-                        <span class="inline-flex items-center gap-2">
-                          <span class="text-gold-light font-display font-semibold">&#36;{{ amount }}</span>
-                          <span class="text-xs fg-muted">USD</span>
-                        </span>
-                      </td>
-                      <td class="py-3.5 text-right font-display font-bold fg glow-gold">
-                        {{ formatBs(amount) }} <span class="text-xs font-normal fg-secondary">Bs</span>
-                      </td>
-                      <td class="hidden py-3.5 text-right text-xs fg-muted sm:table-cell">
-                        1 USD = {{ usdRate.toFixed(2) }} Bs
-                      </td>
-                    </tr>
-                  }
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
         <p class="mt-8 text-center text-xs fg-muted">
-          Tasas de muestra. Los valores reales se muestran en la app.
+          Tasas de referencia. Los valores en tiempo real se consultan automáticamente en la app.
         </p>
       </div>
     </section>
@@ -136,12 +84,4 @@ import { RevealOnScrollDirective } from '../../../../shared/directives/reveal-on
 export class LiveRatesComponent {
   protected readonly rates = liveRates;
   protected readonly usdRate = this.rates.find((r) => r.code === 'USD')?.value ?? 130.45;
-  protected readonly denominations = [1, 5, 10, 20, 50, 100];
-
-  protected formatBs(amount: number): string {
-    return (amount * this.usdRate).toLocaleString('es-VE', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    });
-  }
 }

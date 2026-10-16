@@ -30,6 +30,11 @@ export const faqItems: FaqItem[] = [
       'Sí. Dolarify no recolecta datos personales. Tus presupuestos, cotizaciones y configuraciones se almacenan únicamente en tu dispositivo.',
   },
   {
+    question: '¿Dolarify realiza transferencias bancarias o pagos directos?',
+    answer:
+      'No. Dolarify funciona como un preparador local inteligente: procesa los datos desordenados del portapapeles, calcula el monto en Bolívares y genera el bloque listo para que lo pegues en la app de tu banco. No solicita claves ni tiene acceso a tus fondos.',
+  },
+  {
     question: '¿Planean agregar más monedas?',
     answer:
       'Sí. Estamos trabajando para incluir nuevas monedas y tasas personalizables. Puedes sugerir monedas desde la sección de Ajustes dentro de la app.',

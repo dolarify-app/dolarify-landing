@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-mesh-background',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="mesh-flow" aria-hidden="true">
+    <div class="mesh-flow">
       <ng-content />
     </div>
   `,
