@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dolarify-landing",
+  "compatibility_date": "2026-09-01",
+  "routes": [{ "pattern": "dolarify.app", "custom_domain": true }],
+  "assets": {
+    "directory": "./dist/dolarify-landing/browser"
+  }
+}

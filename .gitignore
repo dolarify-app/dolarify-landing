@@ -45,3 +45,4 @@ Thumbs.db
 .vercel
 .atl/
 repomix-output.xml
+.wrangler/
